@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>Test 分類動畫網站</title>
+  <link rel="stylesheet" href="test.css">
+</head>
+<body>
+
+  <!-- 導覽列 -->
+  <nav>
+    <a href="#" data-target="home" class="active">角色</a>
+    <a href="#" data-target="about">空白2</a>
+    <a href="#" data-target="characters">空白3</a>
+    <a href="#" data-target="news">空白4</a>
+  </nav>
+
+  <!-- 內容區 -->
+  <section id="home" class="content active">
+    <img src="herta.png" alt="示範圖片" class="fade-img">
+    <div class="info-box">
+      <p>尊貴的「天才俱樂部」#83<br>人類，女性，年輕，貌美，可愛。 <br>傳說她隱居在銀河邊境，幾乎不踏出其間，想必此次現身<br>一定是為了某個不得不親自出馬的問題吧？</p>
+    </div>
+  </section>
+
+  <section id="about" class="content">
+    <h1>遊戲介紹</h1>
+    <p>這裡介紹遊戲背景和玩法。</p>
+  </section>
+
+  <section id="characters" class="content">
+    <h1>角色</h1>
+    <p>這裡展示角色資料。</p>
+  </section>
+
+  <section id="news" class="content">
+    <h1>新聞</h1>
+    <p>最新公告和活動消息在這裡。</p>
+  </section>
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="test.js"></script>
+</body>
+</html>

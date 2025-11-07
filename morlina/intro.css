@@ -1,0 +1,89 @@
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #811678;
+}
+
+.bg{
+    position: fixed;
+    inset: 0;
+    background:linear-gradient(270deg,#c8a3cd,#bd68c1,#721a6a);
+    opacity: 0;
+    z-index: -1;
+}
+
+.bline1{
+    position: fixed;
+    height: 100vh;
+    width: 10%;
+    transform-origin: top;
+    transform: scaleY(0);
+    background: 
+    linear-gradient(135deg, #080808,#424040);
+    opacity: 0;
+}
+
+/*標籤列*/
+
+.sidebar{
+    position: fixed;
+    display: flex;  
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 10%;
+}
+.bar
+{
+    background:
+    linear-gradient(135deg, #d83bcb,#d5a7d0);
+    background-clip: text;
+    color: transparent;
+
+    outline: none;
+    margin-top: 30px;
+    width: 100%;
+    font-size: 2.5vw;
+    font-family: "enFont",serif;
+    opacity: 0;
+}
+
+/*內容*/
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page{
+    display: none;
+}
+.page.Up{
+    display: block;
+}
+#homeC{
+    height: 100%;
+    opacity: 0;
+    right: 40%;
+}
+.homeTitle{
+    position: fixed;
+    text-align: center;
+    color: white;
+    font-family: "ZenBold";
+}
+
+@font-face {
+  font-family: "enFont";
+  src: url("./fonts/enFont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}

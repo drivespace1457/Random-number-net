@@ -9,6 +9,12 @@ body{
     justify-content: center;
     background-color: #811678;
 }
+.tips{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 10px;
+}
 
 .bg{
     position: fixed;
@@ -29,12 +35,21 @@ body{
     opacity: 0;
 }
 
+.ap{
+    position: absolute;
+    right: -20%;
+    opacity: 0;
+}
+.bar:hover .ap{
+    opacity: 0.7;
+}
 /*標籤列*/
 
 .sidebar{
     position: fixed;
     display: flex;  
     flex-direction: column;
+    justify-content: space-around;
     text-align: center;
     align-items: center;
     top: 0;
@@ -44,14 +59,16 @@ body{
 }
 .bar
 {
+    position:relative;
+    display: flex;
+    justify-content: center;
     background:
     linear-gradient(135deg, #d83bcb,#d5a7d0);
     background-clip: text;
     color: transparent;
-
     outline: none;
-    margin-top: 30px;
     width: 100%;
+    /*margin-top: 30px;*/
     font-size: 2.5vw;
     font-family: "enFont",serif;
     opacity: 0;
@@ -70,17 +87,27 @@ body{
     display: block;
 }
 #homeC{
-    height: 100%;
+    position: relative;
+    flex-direction: column;
+    height: 100vh;
+    width: 90vw;
+    margin-left: 10vw;
+    justify-content: center;
+    text-align: center;
     opacity: 0;
-    right: 40%;
 }
 .homeTitle{
-    position: fixed;
+    margin-top: 10%;
     text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
     color: white;
     font-family: "ZenBold";
 }
-
+.homePhoto{
+    margin-top: 30px;
+    text-align: center;
+}
 @font-face {
   font-family: "enFont";
   src: url("./fonts/enFont.ttf") format("truetype");

@@ -7,24 +7,59 @@
         <title> 介紹人名稱 </title>
     </head>
     <body>
+        <div class="tips">此網站無任何商業利用目的</div>
         <div class="bg"></div>
         <div class="bline1"></div>
+        <div>
+            <div id="bgStar">✨</div>
+        </div>
         <nav class="sidebar">
+            <!--首頁-->
             <a href="#" id="home" class="bar Up" data-target="homeC"
             onmousedown="textColor1(this)"
             onmouseup="textColor2(this)"
-            >Home</a>
+            >Home
+            <img class="a1 ap" src="images/A1.png" width="48px" height="48px">
+            </a>
+            <!--介紹-->
             <a href="#" id="intro" class="bar" data-target="introC"
             onmousedown="textColor1(this)"
             onmouseup="textColor2(this)"
-            >Intro</a>
+            >Intro
+            <img class="a2 ap" src="images/A2.png" width="48px" height="48px">
+            </a>
+            <!--插畫-->
+            <a href="#" id="paint" class="bar" data-target="paintC"
+            onmousedown="textColor1(this)"
+            onmouseup="textColor2(this)"
+            >Paint
+            <img class="a3 ap" src="images/A3.png" width="48px" height="48px">
+            </a>
+            <!--空白-->
+            <a href="#" id="none" class="bar" data-target="noneC"
+            onmousedown="textColor1(this)"
+            onmouseup="textColor2(this)"
+            >None
+            <img class="a4 ap" src="images/A4.png" width="48px" height="48px">
+            </a>
+            <!--連結-->
+            <a href="#" id="link" class="bar" data-target="linkC"
+            onmousedown="textColor1(this)"
+            onmouseup="textColor2(this)"
+            >Link
+            <img class="a5 ap" src="images/A5.png" width="48px" height="48px">
+            </a>
         </nav>
 
         <div class="content">
             <section id="homeC" class="page Up">
-                <h1 class="homeTitle">莫琳娜Morlina</h1>
+                <div class="homeTitle">莫琳娜Morlina</div>
+                <img class="homePhoto" src="images/cover.jpg">
             </section>
             <section id="introC" class="page">2</section>
+            <section id="paintC" class="page">3</section>
+            <section id="noneC" class="page">4</section>
+            <section id="linkC" class="page">5</section>
         </div>
         
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>

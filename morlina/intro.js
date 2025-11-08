@@ -3,31 +3,43 @@
 const tl = gsap.timeline();
 tl.fromTo(".bg",{opacity:0},{
     opacity: 1,
-    duration: 1.5
+    duration: 0.1
 })
 tl.to(".bline1",{
     scaleY:1,
     opacity:1,
-    duration:2,
+    duration: 0.1,
     ease:"power3.out"
 })
 tl.to(".bline1",{
     left:0,
-    duration:1.5,
+    duration: 0.5,
     ease:"power3.out"
 })
 tl.to("#home",{
     opacity:0.7,
-    duration:0.5,
+    duration:0.3,
 })
 tl.to("#intro",{
     opacity:0.7,
-    duration:0.5,
+    duration:0.3,
+})
+tl.to("#paint",{
+    opacity:0.7,
+    duration:0.3,
+})
+tl.to("#none",{
+    opacity:0.7,
+    duration:0.3,
+})
+tl.to("#link",{
+    opacity:0.7,
+    duration:0.3,
 })
 tl.to("#homeC",{
     y:-40,
     opacity:1,
-    duration:2,
+    duration:1,
     ease:"power3.out"
 })
 
@@ -35,7 +47,7 @@ function textColor1(el){
     el.style.opacity = 1;
 }
 function textColor2(el){
-    el.style.opacity = 0.8;
+    el.style.opacity = 0.7;
 }
 
 //動作區
@@ -59,5 +71,15 @@ bars.forEach(bar => {
 
         // 回到頁面頂部
         window.scrollTo(0,0);
+
+        if (targetId === 'homeC'){
+            gsap.fromTo("#homeC",{opacity:0,y:0},{
+            y:-40,
+            opacity:1,
+            duration:1,
+            ease:"power3.out"
+        });
+        }
     });
 });
+

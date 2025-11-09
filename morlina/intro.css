@@ -10,7 +10,7 @@ body{
     background-color: #811678;
 }
 .tips{
-    position: absolute;
+    position: fixed;
     right: 0;
     bottom: 0;
     font-size: 10px;
@@ -18,7 +18,8 @@ body{
 
 .bg{
     position: fixed;
-    inset: 0;
+    width: 100vw;;
+    height: 100vh;
     background:linear-gradient(270deg,#c8a3cd,#bd68c1,#721a6a);
     opacity: 0;
     z-index: -1;
@@ -70,12 +71,15 @@ body{
     width: 100%;
     /*margin-top: 30px;*/
     font-size: 2.5vw;
-    font-family: "enFont",serif;
+    font-family: "enFont";
     opacity: 0;
 }
 
 /*內容*/
 .content{
+    position: relative;
+    width: 100%;
+    margin-left: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -87,30 +91,56 @@ body{
     display: block;
 }
 #homeC{
+    display: flex;
     position: relative;
     flex-direction: column;
-    height: 100vh;
-    width: 90vw;
-    margin-left: 10vw;
-    justify-content: center;
     text-align: center;
-    opacity: 0;
+    width: 100%;
 }
 .homeTitle{
-    margin-top: 10%;
+    margin-top: 30%;
     text-align: center;
-    font-size: xx-large;
+    font-size: 4vw;
     font-weight: bold;
     color: white;
     font-family: "ZenBold";
+    opacity: 0;
 }
 .homePhoto{
+    height: auto;
+    width: 50%;
+    max-width: 480px;
     margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
+    opacity: 0;
+}
+.homeText{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    padding: 0 10%;
+    border: 5px solid;
+    border-image: linear-gradient(135deg, #a585c2,#550987) 1;
+    border-radius: 15px;
+    background:linear-gradient(135deg, #7a15a8,#cc71ce);
+    font-size: 150%;
+    color: #fcd7d7;
+    font-weight: bold;
+    font-family: "ZenBold";
+    opacity: 0;
 }
 @font-face {
   font-family: "enFont";
   src: url("./fonts/enFont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ZenBold";
+  src: url("./fonts/ZenBold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }

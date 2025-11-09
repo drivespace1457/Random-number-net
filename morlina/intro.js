@@ -3,17 +3,17 @@
 const tl = gsap.timeline();
 tl.fromTo(".bg",{opacity:0},{
     opacity: 1,
-    duration: 0.1
+    duration: 1
 })
 tl.to(".bline1",{
     scaleY:1,
     opacity:1,
-    duration: 0.1,
+    duration: 1.5,
     ease:"power3.out"
 })
 tl.to(".bline1",{
     left:0,
-    duration: 0.5,
+    duration: 1.5,
     ease:"power3.out"
 })
 tl.to("#home",{
@@ -23,25 +23,37 @@ tl.to("#home",{
 tl.to("#intro",{
     opacity:0.7,
     duration:0.3,
-})
+},"-=0.2")
 tl.to("#paint",{
     opacity:0.7,
     duration:0.3,
-})
+},"-=0.2")
 tl.to("#none",{
     opacity:0.7,
     duration:0.3,
-})
+},"-=0.2")
 tl.to("#link",{
     opacity:0.7,
     duration:0.3,
-})
-tl.to("#homeC",{
+},"-=0.2")
+tl.to(".homeTitle",{
     y:-40,
     opacity:1,
-    duration:1,
+    duration:0.6,
     ease:"power3.out"
 })
+tl.to(".homePhoto",{
+    y:-40,
+    opacity:1,
+    duration:0.6,
+    ease:"power3.out"
+},"-=0.5")
+tl.to(".homeText",{
+    y:-40,
+    opacity:1,
+    duration:0.6,
+    ease:"power3.out"
+},"-=0.5")
 
 function textColor1(el){
     el.style.opacity = 1;

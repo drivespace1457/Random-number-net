@@ -55,10 +55,10 @@ svg{
 }
 .floatText {
     position: absolute;
-    color: #2b1352;
+    color: #13042b;
     font-size: calc(2.5vw + 1.5vh);
     font-weight: bold;
-    font-family: "ZenBold";
+    font-family: "tekaki";
     letter-spacing: 20px;
     opacity: 0; /* 初始透明 */
     pointer-events: none; /* 不阻擋滑鼠 */
@@ -90,4 +90,83 @@ svg{
     left: 21vw;
     width: 78vw;
     height: 24vh;
+}
+
+/*內容區*/
+
+.info{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    left: 1vw;
+    top: 1vh;
+    width: 98vw;
+    height: 98vh;
+    font-size: calc(1.5vw + 1vh);
+    font-family: "tekaki";
+    background: linear-gradient(135deg,#a497b0,#4e4947);
+    color: #14042b;
+    border: 5px solid #5c0b5b;
+    border-radius: 3vh;
+    box-sizing: border-box;
+    opacity: 0; /*0*/
+    z-index: 0; /*0*/
+}
+.infoText{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 10%;
+    width: 30%;
+    height: 70%;
+    line-height: 9vh;
+    font-weight: bold;
+    background: linear-gradient(135deg,#c1c1d0,#a632d4);
+    box-sizing: border-box;
+    border: 5px solid #56106b;
+    border-radius: 10vh;
+}
+.infoTextBorder{
+    position: absolute;
+    left: 9%;
+    width: 32%;
+    height: 74%;
+    box-sizing: border-box;
+    border: 5px solid #180732;
+    border-radius: 12vh;
+}
+.infoImg{
+    position: absolute;
+    display: flex;
+    right: 0;
+    width: 50%;
+    height: 100%;
+
+}
+.infoBack{
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    right: 2%;
+    top: 2%;
+    width: 4vw;
+    height: 4vw;
+    font-size: 8vh;
+    font-weight: bold;
+    color: #efe7e7;
+    cursor: pointer;
+    border: 2px solid #f0e7e7;
+    border-radius: 50%;
+    box-sizing: border-box;
+    background: linear-gradient(135deg,#9d3faf,#2e0953);
+}
+
+
+@font-face {
+  font-family: 'tekaki';
+  src: url('fonts/tekaki.woff2') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }

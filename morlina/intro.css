@@ -1,146 +1,93 @@
 html, body{
-    height: 100%;
     margin: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
 }
-
 body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #811678;
+    background: linear-gradient(135deg, #f0ecf0, #e38ee3);
 }
-.tips{
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    font-size: 10px;
-}
-
-.bg{
-    position: fixed;
-    width: 100vw;;
-    height: 100vh;
-    background:linear-gradient(270deg,#c8a3cd,#bd68c1,#721a6a);
-    opacity: 0;
-    z-index: -1;
-}
-
-.bline1{
-    position: fixed;
-    height: 100vh;
-    width: 10%;
-    transform-origin: top;
-    transform: scaleY(0);
-    background: 
-    linear-gradient(135deg, #080808,#424040);
-    opacity: 0;
-}
-
-.ap{
+svg{
     position: absolute;
-    right: -20%;
-    opacity: 0;
-}
-.bar:hover .ap{
-    opacity: 0.7;
-}
-/*標籤列*/
-
-.sidebar{
-    position: fixed;
-    display: flex;  
-    flex-direction: column;
-    justify-content: space-around;
-    text-align: center;
-    align-items: center;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 10%;
-}
-.bar
-{
-    position:relative;
-    display: flex;
-    justify-content: center;
-    background:
-    linear-gradient(135deg, #d83bcb,#d5a7d0);
-    background-clip: text;
-    color: transparent;
-    outline: none;
-    width: 100%;
-    /*margin-top: 30px;*/
-    font-size: 2.5vw;
-    font-family: "enFont";
-    opacity: 0;
-}
-
-/*內容*/
-.content{
-    position: relative;
-    width: 100%;
-    margin-left: 10%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.page{
-    display: none;
-}
-.page.Up{
+    height: 100vh;
+    width: 100vw;
     display: block;
+    z-index: 10;
 }
-#homeC{
+.backImg{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.5;
+    z-index: 3;
+}
+.backLine{
+    position: absolute;
     display: flex;
-    position: relative;
-    flex-direction: column;
-    text-align: center;
-    width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1.05) scaleX(1.15);
+    opacity: 0.3;
+    z-index: 3;
 }
-.homeTitle{
-    margin-top: 30%;
-    text-align: center;
-    font-size: 4vw;
-    font-weight: bold;
-    color: white;
-    font-family: "ZenBold";
-    opacity: 0;
+.backR1{
+    opacity: 0.4;
 }
-.homePhoto{
-    height: auto;
-    width: 50%;
-    max-width: 480px;
-    margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    opacity: 0;
+.backR2{
+    opacity: 0.4;
 }
-.homeText{
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 40px;
-    padding: 0 10%;
-    border: 5px solid;
-    border-image: linear-gradient(135deg, #a585c2,#550987) 1;
-    border-radius: 15px;
-    background:linear-gradient(135deg, #7a15a8,#cc71ce);
-    font-size: 150%;
-    color: #fcd7d7;
+.backR3{
+    opacity: 0.4;
+}
+.backR4{
+    opacity: 0.4;
+}
+.block{
+    position: absolute;
+    display: flex;
+    opacity: 0.5;
+    stroke: #cf23cb;
+    stroke-width: 1;
+    fill: url(#br1);
+    filter: blur(2px);
+    cursor: pointer;
+}
+.floatText {
+    position: absolute;
+    color: #2b1352;
+    font-size: calc(2.5vw + 1.5vh);
     font-weight: bold;
     font-family: "ZenBold";
-    opacity: 0;
+    letter-spacing: 20px;
+    opacity: 0; /* 初始透明 */
+    pointer-events: none; /* 不阻擋滑鼠 */
+    z-index: 11;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-@font-face {
-  font-family: "enFont";
-  src: url("./fonts/enFont.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+.b1-text {
+    top: 0.5vh;            /* 方框 y */
+    left: 1vw;           /* 方框 x */
+    width: 78vw;         /* 方框寬度 */
+    height: 24vh;        /* 方框高度 */
 }
-@font-face {
-  font-family: "ZenBold";
-  src: url("./fonts/ZenBold.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+.b2-text {
+    top: 26vh;
+    left: 21vw;
+    width: 78vw;
+    height: 23.5vh;
+}
+.b3-text {
+    top: 51vh;
+    left: 1vw;
+    width: 78vw;
+    height: 23.5vh;
+}
+.b4-text {
+    top: 76vh;
+    left: 21vw;
+    width: 78vw;
+    height: 24vh;
 }

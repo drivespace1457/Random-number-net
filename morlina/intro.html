@@ -1,78 +1,61 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta charset="utf-8" />
-        <link rel="stylesheet" href="intro.css">
-        <title>莫琳娜 morlina</title>
-    </head>
-    <body>
-        <div class="tips">此網站無任何商業利用目的</div>
-        <div class="bg"></div>
-        <div class="bline1"></div>
-        <nav class="sidebar">
-            <!--首頁-->
-            <a href="#" id="home" class="bar Up" data-target="homeC"
-            onmousedown="textColor1(this)"
-            onmouseup="textColor2(this)"
-            >Home
-            <img class="a1 ap" src="images/A1.png" width="48px" height="48px">
-            </a>
-            <!--介紹-->
-            <a href="#" id="intro" class="bar" data-target="introC"
-            onmousedown="textColor1(this)"
-            onmouseup="textColor2(this)"
-            >Intro
-            <img class="a2 ap" src="images/A2.png" width="48px" height="48px">
-            </a>
-            <!--插畫-->
-            <a href="#" id="paint" class="bar" data-target="paintC"
-            onmousedown="textColor1(this)"
-            onmouseup="textColor2(this)"
-            >Paint
-            <img class="a3 ap" src="images/A3.png" width="48px" height="48px">
-            </a>
-            <!--空白-->
-            <a href="#" id="none" class="bar" data-target="noneC"
-            onmousedown="textColor1(this)"
-            onmouseup="textColor2(this)"
-            >None
-            <img class="a4 ap" src="images/A4.png" width="48px" height="48px">
-            </a>
-            <!--連結-->
-            <a href="#" id="link" class="bar" data-target="linkC"
-            onmousedown="textColor1(this)"
-            onmouseup="textColor2(this)"
-            >Link
-            <img class="a5 ap" src="images/A5.png" width="48px" height="48px">
-            </a>
-        </nav>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="intro.css">
+    <title> 魅魔酒吧負責人-莫琳娜(2.0) </title>
+</head>
+<body>
+        <svg width="100vw" height="100vh" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="br1" x1="0%" y1="0%" x2="100%" y2="50%">
+                <stop offset="0%" style="stop-color:#b296b2;" />
+                <stop offset="100%" style="stop-color:#c726cd;" />
+                </linearGradient>
+                <clipPath id="clip1">
+                    <rect width="78vw" height="24vh" x="1vw" y="1vh" rx="1vw" ry="1vh"/>
+                </clipPath>
+                <clipPath id="clip2">
+                    <rect width="78vw" height="23.5vh" x="21vw" y="26vh" rx="1vw" ry="1vh"/>
+                </clipPath>
+                <clipPath id="clip3">
+                    <rect width="78vw" height="23.5vh" x="1vw" y="50.5vh" rx="1vw" ry="1vh"/>
+                </clipPath>
+                <clipPath id="clip4">
+                    <rect width="78vw" height="24vh" x="21vw" y="75vh" rx="1vw" ry="1vh"/>
+                </clipPath>
+            </defs>
+            <image class="backR1" href="images/back.png" x="-10" y="-60" width="100vw" height="100vh" 
+                   clip-path="url(#clip1)"
+                   preserveAspectRatio="xMidYMid slice"/>
+            <image class="backR2" href="images/back2.png" x="0" y="90" width="100vw" height="100vh" 
+                   clip-path="url(#clip2)"
+                   preserveAspectRatio="xMidYMid slice"/>
+            <image class="backR3" href="images/back3.png" x="0" y="250" width="100vw" height="100vh" 
+                   clip-path="url(#clip3)"
+                   preserveAspectRatio="xMidYMid slice"/>
+            <image class="backR4" href="images/back4.png" x="0" y="310" width="100vw" height="100vh" 
+                   clip-path="url(#clip4)"
+                   preserveAspectRatio="xMidYMid slice"/>
+            <rect class="block b1" width="78vw" height="24vh"
+            x="1vw" y="1vh" rx="1vw" ry="1vh"/>
+            <rect class="block b2" width="78vw" height="23.5vh"
+            x="21vw" y="26vh" rx="1vw" ry="1vh"/>
+            <rect class="block b3" width="78vw" height="23.5vh"
+            x="1vw" y="50.5vh" rx="1vw" ry="1vh"/>
+            <rect class="block b4" width="78vw" height="24vh"
+            x="21vw" y="75vh" rx="1vw" ry="1vh"/>
+        </svg>
+        <div class="floatText b1-text">介紹</div>
+        <div class="floatText b2-text">插圖</div>
+        <div class="floatText b3-text">連結</div>
+        <div class="floatText b4-text">其他</div>
+        <img class="backImg" src="images/morlina.png">
+        <img class="backLine" src="images/backline.png">
 
-        <div class="content">
-            <section id="homeC" class="page Up">
-                <div class="homeTitle">莫琳娜Morlina</div>
-                <img class="homePhoto" src="images/cut.png">
-                <div class="homeText">
-                    <div>
-                    稱謂:魅魔酒吧負責人-莫琳娜<br>
-                    種族:魅魔
-                    年齡:150歲<br>
-                    身高:170cm<br>
-                    體重:55kg<br>
-                    語言:中、英、台語<br>
-                    直播內容:唱歌、ASMR、手作<br>
-                    個人勢Vtuber<br>
-                    </div>
-                </div>
-            </section>
-            <section id="introC" class="page">2</section>
-            <section id="paintC" class="page">3</section>
-            <section id="noneC" class="page">4</section>
-            <section id="linkC" class="page">5</section>
-        </div>
-        
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="intro.js"></script>
 </body>
 </html>
-

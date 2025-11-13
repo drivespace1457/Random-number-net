@@ -264,3 +264,12 @@ svg{
   font-weight: normal;
   font-style: normal;
 }
+
+@media screen and (max-width: 600px) {
+    .info,
+    .art,
+    .link,
+    .other {
+        flex-wrap: wrap;
+    }
+}

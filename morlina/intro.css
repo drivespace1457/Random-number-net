@@ -266,10 +266,100 @@ svg{
 }
 
 @media screen and (max-width: 600px) {
-    .info,
-    .art,
-    .link,
-    .other {
-        flex-wrap: wrap;
+    /* 調整主要區塊為相對定位，方便換行 */
+    .info, .art, .link, .other {
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: 95%;
+        height: auto;
+        margin: 1vh auto;
+        padding: 2vh 0;
+        border-radius: 2vh;
+    }
+
+    /* info 區塊文字和圖片改相對定位 */
+    .infoText, .infoTextBorder, .infoImg {
+        position: relative;
+        width: 90%;
+        max-width: 300px;
+        height: auto;
+        margin: 1vh auto;
+        line-height: normal;
+    }
+
+    /* art 區塊圖片改相對定位並置中 */
+    .artImg {
+        position: relative;
+        width: 80%;
+        max-width: 300px;
+        margin: 2vh auto;
+        border-radius: 5vw;
+        border: 0.5vw solid #c5adda;
+    }
+
+    /* link 區塊改成 column */
+    .linkText {
+        position: relative;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 90%;
+        margin: 2vh auto;
+        height: auto;
+    }
+
+    /* link item 調整大小與間距 */
+    .linkText a, .linkItem {
+        position: relative;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        margin: 1vh 0;
+        text-decoration: none !important;
+        color: #14042b !important;
+    }
+
+    .linkText img {
+        width: 12%;
+        max-width: 40px;
+        margin-right: 2vw;
+    }
+
+    .linkText span {
+        font-size: 4vw;
+        padding-left: 1vw;
+    }
+
+    /* other 區塊文字置中 */
+    .other span {
+        font-size: 6vw;
+        line-height: normal;
+    }
+
+    /* floatText 調整大小 */
+    .floatText {
+        font-size: 5vw;
+        letter-spacing: 5px;
+    }
+
+    /* infoBack 調整按鈕大小 */
+    .infoBack {
+        width: 10vw;
+        height: 10vw;
+        font-size: 6vw;
+        top: 1vh;
+        right: 1vw;
+    }
+
+    /* 背景圖片調整 */
+    .backImg, .backLine {
+        width: 100%;
+        height: auto;
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
     }
 }
